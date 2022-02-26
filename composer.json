@@ -1,0 +1,22 @@
+{
+    "name": "savingfor/elasticsearch-query-builder",
+    "description": "Build and execute an Elasticsearch search query using a fluent PHP API",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.3",
+        "elasticsearch/elasticsearch": "7.12",
+        "friendsofphp/php-cs-fixer": "2.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "Savingfor\\ElasticsearchQueryBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "savingfor",
+            "email": "531229548@qq.com"
+        }
+    ]
+}
