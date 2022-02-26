@@ -88,7 +88,7 @@ $result = $builder->search();
 
 #### ExistsQuery
 
-[官方文档使用详情]([https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-exists-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-exists-query.html))
+[官方文档使用详情](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-exists-query.html)
 
 ```php
 \Savingfor\ElasticsearchQueryBuilder\Queries\ExistsQuery::create('conditions');
