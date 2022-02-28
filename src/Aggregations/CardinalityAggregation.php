@@ -2,7 +2,7 @@
 
 namespace Savingfor\ElasticsearchQueryBuilder\Aggregations;
 
-use SavingFor\ElasticsearchQueryBuilder\Aggregations\Concerns\WithMissing;
+use Savingfor\ElasticsearchQueryBuilder\Aggregations\Concerns\WithMissing;
 
 class CardinalityAggregation extends Aggregation
 {
