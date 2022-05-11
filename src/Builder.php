@@ -28,6 +28,8 @@ class Builder
 
     protected $withAggregations = true;
 
+    protected $trackTotalHits = false;
+
     protected $client;
 
     public function __construct(Client $client)
@@ -86,6 +88,10 @@ class Builder
 
         if ($this->from !== null) {
             $params['from'] = $this->from;
+        }
+
+        if ($this->trackTotalHits) {
+            $params["track_total_hits"] = $this->trackTotalHits;
         }
 
         return $this->client->search($params);
@@ -158,5 +164,11 @@ class Builder
         }
 
         return $payload;
+    }
+
+    public function trackTotalHits( bool $trackTotalHits) : self {
+        $this->trackTotalHits = $trackTotalHits;
+
+        return $this;
     }
 }
